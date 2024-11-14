@@ -1,0 +1,762 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    background-color: #ebebeb;
+}
+
+/* Advertising */
+
+.public {
+    background-color: #252A2E;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 2%;
+    color: #000;
+}
+
+.public-1 {
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+} 
+
+/* HEADER */
+
+.header {
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+
+
+.header .logo {
+    cursor: pointer;
+}
+
+.header .logo img {
+    height: 100px;
+    width: auto;
+}
+
+.header .logo img:hover {
+    transform: scale(1.2);
+}
+
+/* HEADER NAV */
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-links li:hover,
+.overlay a:hover {
+    transform: scale(1.1);
+}
+
+.header .nav-links a {
+    font-size: 700;
+    color: #252A2E;
+}
+
+.header .nav-links li a:hover {
+    color: #000;
+}
+
+/* HEADER NAV MENU*/
+
+.menu {
+    display: none;
+}
+
+.header .btn button,
+.header .menu button {
+    margin-left: 20px;
+    font-weight: 700;
+    color: #fff;
+    padding: 9px 25px;
+    background-color: #252A2E;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover,
+.header .menu button:hover{
+    background-color: black;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 800px) {
+    .nav-links, .btn{
+        display: none;
+    }
+    .menu {
+        display: inherit;
+    }
+}
+
+/*Nav*/
+
+.header a{
+    text-decoration: none;
+}
+
+.header .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(33, 49, 63, .95);
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+
+.header .overlay .overlay-content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+.header .overlay a{
+    padding: 15px;
+    font-size: 20px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+    color: #fff;
+}
+
+.header .overlay a:hover, 
+.header .overlay a:focus{
+    color: #fff;
+}
+
+.header .overlay .close{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 35px;
+}
+
+@media screen and (max-height:450px) {
+    .header .overlay a{
+        font-size: 20px;
+    }
+    .header .overlay .close{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+/* IMAGES */
+
+.carrusel {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.carrusel-items {
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.carrusel-item {
+    min-width: 300px;
+    max-width: 300px;
+    height: 200px;
+}
+
+.carrusel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Profile */
+
+.perfil img {
+    width: 280px;
+}
+
+.perfil {
+    background-color: #ebebeb;
+    margin: auto;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.perfil-box {
+    border: 10px solid #252A2E;
+    border-radius: 50%;
+}
+
+.perfil h1 {
+    color: #000;
+    font-size: 25px;
+    letter-spacing: 10px;
+    margin: 10px 0 10px;
+}
+
+.perfil h2 {
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.perfil p {
+    text-align: center;
+}
+
+.perfil ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.perfil ul li {
+    display: inline-block;
+}
+
+.perfil ul li a {
+    color: #000;
+    margin: 10px;
+    padding: 10px 5px;
+    display: block;
+    transition: all 0.5s ease-in-out;
+}
+
+.perfil ul li a:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Video */
+
+.container {
+    display: grid;
+    gap: 15px;
+    align-items: flex-start;
+    padding: 5px 5%;
+}
+
+.container .main-video {
+    background: #252A2E;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.container .main-video video {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.container .main-video .title {
+    color: #fff;
+    font-size:  15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.container .video-list {
+    background: #fff;
+    border-radius: 5px;
+    height: 520px;
+    overflow: scroll;
+}
+
+.container .video-list::-webkit-scrollbar {
+    width: 7px;
+}
+
+
+.container .video-list::-webkit-scrollbar-track{
+    background: #ccc;
+    border-radius: 50px;
+}
+
+
+.container .video-list::-webkit-scrollbar-thumb{
+    background: #666;
+    border-radius: 50px;
+}
+
+
+.container .video-list .vid video {
+    width: 100px;
+    border-radius: 5px;
+}
+
+.container .video-list .vid {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #f7f7f7;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,.1);
+    cursor: pointer;
+}
+
+.container .video-list .vid:hover {
+    background-color: #eee;
+}
+
+.container .video-list .vid:active {
+    background-color: #2980d9;
+}
+
+.container .video-list .vid:active .title {
+    color: #fff;
+}
+
+.container .video-list .vid .title {
+    color: #333;
+    font-size: 17px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+}
+
+/* Skills */
+
+.skills {
+    background-color: #ebebeb;
+    color: #fff;
+    padding: 10px 10px;
+}
+
+.skills .contenido-seccion {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.skills h2 {
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 0;
+    color: #000;
+}
+
+.skills .fila {
+    display: flex;
+}
+
+.skills .fila .col {
+    width: 50%;
+    padding: 0 10px;
+}
+
+.skills .fila .col h3 {
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: #000;
+}
+
+.skills .skill > span {
+    display: block;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.skills .skill .barra-skill {
+    height: 8px;
+    width: 80%;
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.skills .skill .progreso {
+    background-color: #252A2E;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+
+.skills .skill .barra-skill span {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: #252A2E;
+    line-height: 40px;
+    text-align: center;
+    right: -15px;
+    font-size: 14px;
+}
+
+.skills .skill .EstudioDeFotografia {
+    width: 0%;
+    animation: 5s EstudioDeFotografia forwards;
+}
+
+.links-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+
+}
+
+.link-btn {
+    border: none;
+}
+
+.link-btn a {
+    color: #000;
+}
+
+i {
+    width: 20px;
+}
+
+
+.link-btn a:hover {
+    color: #3b3b3b;
+}
+@keyframes EstudioDeFotografia {
+    0% {width: 0%;}
+    100% {width: 47%;}
+}
+
+.skills .skill .lightroom {
+    width: 0%;
+    animation: 5s lightroom forwards;
+}
+
+@keyframes lightroom {
+    0% {width: 0%;}
+    100% {width: 11%;}
+}
+
+.skills .skill .photoshop {
+    width: 0%;
+    animation: 5s photoshop forwards;
+}
+
+@keyframes photoshop {
+    0% {width: 0%;}
+    100% {width: 38%;}
+}
+
+.skills .skill .fotomontaje {
+    width: 0%;
+    animation: 5s fotomontaje forwards;
+}
+
+@keyframes fotomontaje {
+    0% {width: 0%;}
+    100% {width: 9%;}
+}
+
+.skills .skill .FineArt {
+    width: 0%;
+    animation: 5s FineArt forwards;
+}
+
+@keyframes FineArt {
+    0% {width: 0%;}
+    100% {width: 3%;}
+}
+
+.skills .skill .RetoquedePiel {
+    width: 0%;
+    animation: 5s RetoquedePiel forwards;
+}
+
+@keyframes RetoquedePiel {
+    0% {width: 0%;}
+    100% {width: 4%;}
+}
+
+/* Calendar Clima Señas Explicar */
+
+.contenedor {
+    margin: 10px auto;
+    /* width: 95%; */
+}
+
+.fotos {
+    max-width: 300px;
+    border-radius: 10px;
+    border: 3px solid #252A2E;
+    margin-right: 20px;
+}
+
+.text h2 {
+    font-size: 20px;
+    padding: 1px;
+    color: #000;
+}
+
+.text p {
+    padding: 3px;
+    font-size: 15px;
+    color: #000;
+}
+
+/*.contenedor-youtube {
+    margin: 10px auto;
+    width: 95%;
+    text-align: center;
+}
+
+.fotos-youtube {
+    max-width: 300px;
+    border-radius: 10 px;
+    border: 3px solid #252A2E;
+    margin-right: 20px;
+} */
+
+/* Galeria */
+
+.galeria h1 {
+    text-align: center;
+    margin: 20px 0 15px 0;
+    color: #000;
+}
+
+
+.linea {
+    border-top: 5px solid #252A2E;
+    margin-bottom: 20px;
+}
+
+.contenedor-imagenes {
+    display: flex;
+    width: 95%;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    flex-direction: column-reverse;
+}
+
+.contenedor-imagenes .imagen {
+    width: 100%;
+    position: relative;
+    height: 200px;
+    margin-bottom: 5px;
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay h2 {
+    padding: 5px;
+    border-radius: 10px;
+    background: #333;
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    align-items: center;
+    transform: translate(-50%, -50%);
+}
+
+
+.imagen:hover .overlay {
+    height: 100%;
+    cursor: pointer;
+}
+
+/* Toggler */
+
+.toggler {
+    position: fixed;
+    bottom: 25px;
+    right: 15px;
+    height: 40px;
+    width: 40px;
+    background-color: #08f75f;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggler span {
+    position: relative;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* Footer */
+
+.pie-pagina{
+    width: 100%;
+    background-color: #ebebeb;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 40px 0px;
+}
+.pie-pagina .grupo-1 .box-3 figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box-3 figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box-3 h2{
+    color: #000;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box-3 p{
+    color: #000;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #252A2E;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: #fff;
+}
+.pie-pagina .grupo-2{
+    background-color: #252A2E;;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width: 800px) {
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 25px 0px; 
+    }
+}
+
+/* Logos */
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logos {
+    overflow: hidden;
+    padding: 10px 0;
+    background: #252A2E;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logos:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 15s slide infinite linear;
+}
+
+.logos-slide img {
+    height: 50px;
+    margin: 0 40px;
+}
+
+.youtube {
+    color: #fff;
+    padding: 9px 10px;
+    background-color: #000;
+    border-radius: 1px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.Yout {
+    color: #fff;
+    padding: 9px 10px;
+    background-color: #000;
+    border-radius: 1px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}

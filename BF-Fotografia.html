@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image" href="#">
+    <link rel="stylesheet" href="BF-Fotografia.css">
+    <title>BF Fotografia</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <a href="bffotografia.html"><img src="logo/bffotografia.png" alt="Logo"></a>
+        </div>
+
+    <!-- NAV -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="">Lenguaje de Señas</a></li>
+            <li><a href="/Edición/edición.html">Edición</a></li>
+            <li><a href="/Gratis y Vendidos/gratisyvendidos.html">Gratis y Vendidos</a></li>
+        </ul>
+    </nav>
+    <a class="btn" href="#"><button>Quiero Book</button></a>
+        <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+        <div class="overlay" id="mobile-menu">
+            <a onclick="closeNav()" href="#" class="close">&times;</a>
+            <div class="overlay-content">
+                <a href="bffotografia.html">Inicio</a>
+                <a href="">Lenguaje de Señas</a>
+                <a href="/Edición/edición.html">Edición</a>
+                <a href="/Gratis y Vendidos/gratisyvendidos.html">Gratis y Vendidos</a>
+                <a href="/FormularioWhatsapp/formulariowhatsapp.html">Quiero book</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Advertising 
+    <div class="public">
+        <h1 class="public-1">Buenas tardes, estoy edificando más tarde subir las fotos los esperamos</h1>
+     </div> -->
+
+    <!-- IMAGES -->
+    <div class="carrusel">
+        <div class="carrusel-items">
+            <div class="carrusel-item">
+                <img loading="lazy" src="Img/agricultoresclub-galeria.jpg" alt="">
+            </div>
+            <div class="carrusel-item">
+                <img loading="lazy" src="Img/casamiento-galeria.jpg" alt="">
+            </div>
+            <div class="carrusel-item">
+                <img loading="lazy" src="Img/egresado-galeria.jpg" alt="">
+            </div>
+            <div class="carrusel-item">
+                <img loading="lazy" src="Img/fineart-galeria.jpg" alt="">
+            </div>
+            <div class="carrusel-item">
+                <img loading="lazy" src="img/fotomontaje-galeria.jpg" alt="">
+            </div>
+            <div class="carrusel-item">
+                <img loading="lazy" src="Img/jineteadas-galeria.jpg" alt="">
+            </div>
+            <div class="carrusel-item">
+                <img loading="lazy" src="Img/primerañito-galeria.jpg" alt="">
+            </div>
+            <div class="carrusel-item">
+                <img loading="lazy" src="Img/xvaños-galeria.jpg" alt="">
+            </div>
+            <!-- <div class="carrusel-item"> 
+                <img loading="lazy" src="Img/galeria/bebe-galeria.jpg" alt="">
+            </div> -->        
+        </div>
+    </div>
+
+    <!-- Profile -->
+    <div class="perfil">
+        <img loading="lazy" src="logo/bfnegro.jpg" class="perfil-box" alt="Logo">
+        <h1>Soy Fotógrafo</h1>
+        <h2>Me llamo Braian soy hipoacúsico</h2>
+        <h2>Gober,Castro - San Pedro</h2>
+        <ul>
+            <li><a href="https://www.facebook.com/bffotografia2023/"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/bffotografia2023/"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://ar.pinterest.com/bffotografia2023/"><i class="fa-brands fa-pinterest"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+        </ul>
+    </div>
+
+    <!-- Video -->
+    <div class="container">
+        <div class="main-video">
+            <div class="video">
+                <video src="bffotografiavideo.mp4" controls muted></video>
+                <h3 class="title">Bienvenidos a BF Fotografia</h3>
+            </div>
+        </div>
+     </div>
+
+    <!--  <div class="contenedor-youtube">
+       <img loading="lazy" class="fotos-youtube" src="logo/BF.jpg" alt="">
+       <div class="text">
+           <h2>Edición</h2>
+           <p>Comprar Edición</p>
+           <a href="https://www.youtube.com/channel/UCQ87uI3ikI7mFYviJ8ipeHQ"><button class="Yout">Enivar por WhatsApp</button></a>
+        </div>
+    </div> -->
+
+    <!-- Galeria -->
+    <div class="galeria">
+        <div class="linea">
+            <h1 class="ga">Galeria</h1>
+        </div>
+        <div class="contenedor-imagenes">
+            <div class="imagen">
+                <img src="Img/xvaños-galeria.jpg" alt="">
+                <div class="overlay">
+                    <h2 cg>XV Años</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="Img/jineteadas-galeria.jpg" alt="">
+                <div class="overlay">
+                    <h2>Jineteadas</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="Img/agricultoresclub-galeria.jpg" alt="">
+                <div class="overlay">
+                    <h2>Agricultores club</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="Img/fineart-galeria.jpg" alt="">
+                <div class="overlay">
+                    <h2>Fine Art</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="Img/fotomontaje-galeria.jpg" alt="">
+                <div class="overlay">
+                    <h2>Fotomontaje</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="Img/egresado-galeria.jpg" alt="">
+                <div class="overlay">
+                    <h2>Egresado</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="Img/casamiento-galeria.jpg" alt="">
+                <div class="overlay">
+                    <h2>Casamiento</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <a href=""><img src="Img/primerañito-galeria.jpg" alt=""></a>
+                <div class="overlay">
+                    <h2>Primer añito</h2>
+                </div>
+            </div>
+        </div>
+
+    <!-- Toggler -->
+        </div>
+            <a href="/FormularioWhatsapp/formulariowhatsapp.html"></a>
+                <button class="toggler">
+                <span class="fa-brands fa-whatsapp"></span>
+        </button>
+    </div>
+
+    
+    <!-- Skills -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Habilidades Técnicas -->
+                <div class="col">
+                    <h3>Experiencia</h3>
+                    <div class="skill">
+                        <span>Estudio de Fotografia</span>
+                        <div class="barra-skill">
+                            <div class="progreso EstudioDeFotografia">
+                                <span>47%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Lightroom</span>
+                        <div class="barra-skill">
+                            <div class="progreso lightroom">
+                                <span>11%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso photoshop">
+                                <span>38%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Edición</h3>
+                    <div class="skill">
+                        <span>Fotomontaje</span>
+                        <div class="barra-skill">
+                            <div class="progreso fotomontaje">
+                                <span>9%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Fine Art</span>
+                        <div class="barra-skill">
+                            <div class="progreso FineArt">
+                                <span>3%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Retoque de Piel</span>
+                        <div class="barra-skill">
+                            <div class="progreso RetoquedePiel">
+                                <span>4%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- Calendar Clima Señas Explicar
+     <div class="contenedor">
+        <i class="fa-solid fa-calendar-days"></i>
+        <div class="text">
+            <h2>Tu turno</h2>
+            <p>Buscar a tu turno para calendar antes me guardo despues hacemos book</p>
+            <a href="/Turno/turno.html"><button class="youtube">Si quiero a mi turno</button></a>
+        </div>
+     </div>
+
+     
+     
+     <div class="contenedor">
+        <i class="fa-solid fa-question"></i>
+        <div class="text">
+            <h2>Queres aprender señas</h2>
+            <p>Señas es dificil? No pasa nada, Puedo te enseñar señas es muy facil y rapido</p>
+            <a href="/Lenguaje de Señas/lenguajeseñas.html"><button class="youtube">Quiero saber</button></a>
+            <a href="bffotografia.html"><button class="youtube">No puedo</button></a>
+        </div>
+     </div>
+     <div class="contenedor">
+        <i class="fa-regular fa-image"></i>
+        <div class="text">
+            <h2>Como te paso las fotos?</h2>
+            <p>Como en donde descargar?</p>
+            <a href="/Como te paso fotos/comotepasofotos.html"><button class="youtube">Explicar por video</button></a>
+        </div>
+     </div> 
+     <div class="contenedor">
+        <i class="fa-solid fa-download"></i>
+        <div class="text">
+            <h2>Aqui descargar fotos</h2>
+            <p>Muy facil y rapido</p>
+            <a href="/Descargar Fotos/descargarfotos.html"><button class="youtube">Descargar fotos gratis</button></a>
+            <a href="/Descargar Fotos/comprarfotos.html"><button class="youtube">Comprar fotos calidad</button></a>
+        </div>
+     </div>
+    </div> -->
+
+
+    <!-- Calendar Clima Señas Explicar -->
+     <section class="links-section">
+
+         <div class="contenedor">
+            <i class="fa-solid fa-calendar-days"></i>
+            <button class="link-btn">
+             <a href="/Turno/turno.html">Agendar un turno</a>
+             </button>
+         </div>
+     
+         
+         
+         <!--  <div class="contenedor">
+            <i class="fa-solid fa-question"></i>
+            <button class="link-btn">
+             <a  href="/Lenguaje de Señas/lenguajeseñas.html">Aprende señas</a>
+             </button>  -->
+         </div>
+         <div class="contenedor">
+            <i class="fa-regular fa-image"></i>
+            <button class="link-btn">
+             <a  href="/Como te paso fotos/comotepasofotos.html">Como descargar fotos</a>
+             </button>
+            
+         </div> 
+         <div class="contenedor">
+            <i class="fa-solid fa-download"></i>
+            <button class="link-btn">
+             <a  href="/Descargar Fotos/descargarfotos.html">Descargar fotos</a>
+             </button>
+         </div>
+         <div class="contenedor">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <button class="link-btn">
+             <a  href="/Gratis y Vendidos/gratisyvendidos.html">Comprar fotos</a>
+             </button>
+         </div>
+        </div>
+     </section>
+
+    <!-- Footer -->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box-3">
+                <figure>
+                    <a href="#">
+                        <img src="logo/BFFotografia.png" alt="Logo de SLee Dw">
+                    </a>
+                </figure>
+            </div>
+            <div class="box-3">
+                <h2>Bienvenidos BF Fotografia</h2>
+                <p>No te olvides seguime y darle like, Por favor</p>
+            </div>
+            <div class="box-3">
+                <h2>SEGUIME :</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/bffotografia2023/" class="fa-brands fa-facebook"></a>
+                    <a href="https://www.instagram.com/bffotografia2023/" class="fa-brands fa-instagram"></a>
+                    <a href="https://ar.pinterest.com/bffotografia2023/" class="fa-brands fa-pinterest">
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2024 <b>BF Fotografia</b></small>
+            <p>Publicado: 15 de octubre</p>
+        </div>
+    </footer>
+
+    <!-- Logos -->
+<div class="logos">
+    <div class="logos-slide">
+        <img loading="lazy" src="mediosdepago/CuentaDNI-1.png" alt="Cuenta DNI">
+        <img loading="lazy" src="mediosdepago/BancoGalicia-2.jpg" alt="BancoGalicia">
+        <img loading="lazy" src="mediosdepago/MercadoPago-3.png" alt="MercadoPago">
+        <img loading="lazy" src="mediosdepago/BancoProvincia_4.png" alt="BancoProvincia">
+        <img loading="lazy" src="mediosdepago/BindBanco-6.png" alt="BancoGalicia">
+    </div>
+    <div class="logos-slide">
+        <img loading="lazy" src="mediosdepago/CuentaDNI-1.png" alt="Cuenta DNI">
+        <img loading="lazy" src="mediosdepago/BancoGalicia-2.jpg" alt="BancoGalicia">
+        <img loading="lazy" src="mediosdepago/MercadoPago-3.png" alt="MercadoPago">
+        <img loading="lazy" src="mediosdepago/BancoProvincia_4.png" alt="BancoProvincia">
+        <img loading="lazy" src="mediosdepago/BancoGalicia-2.jpg" alt="BancoGalicia">
+    </div>
+</div>
+
+
+
+
+    <script src="BF-Fotografia.js"></script>
+    
+</body>
+</html>
+
+    
+</body>
+</html>
